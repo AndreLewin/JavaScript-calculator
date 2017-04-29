@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $.getScript('operations.js');
+        });
+    </script>
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<div id="calculator">
+		<!-- Display and clear buttons -->
+		<div class="top">
+			<div class="title">freeCodeCalculator</div>
+			<span class="clear">C</span>
+			<div class="display"></div>
+		</div>
+
+		<div class="buttons">
+			<!-- Numbers and operators -->
+			<span>7</span>
+			<span>8</span>
+			<span>9</span>
+			<span class="operator">÷</span>
+			<span>4</span>
+			<span>5</span>
+			<span>6</span>
+			<span class="operator">x</span>
+			<span>1</span>
+			<span>2</span>
+			<span>3</span>
+			<span class="operator">-</span>
+			<span>0</span>
+			<span>.</span>
+			<span class="eval">=</span>
+			<span class="operator">+</span>
+		</div>
+	</div>
+</body>
+</html>
